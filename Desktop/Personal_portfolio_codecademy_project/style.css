@@ -1,0 +1,164 @@
+/* Reset some default styles for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-name h1, .site-name h1 a {
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: none; 
+    font-weight: 700; 
+}
+
+.site-name h1 a:hover,
+.site-name h1 a:focus {
+    color: #007bff; 
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #007bff;
+}
+
+main {
+    margin-top: 50px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#about,
+#projects,
+#skills,
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#projects ul,
+#skills .skills-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#projects li,
+#skills div {
+    margin-bottom: 15px;
+}
+
+#projects li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#projects li a:hover,
+#projects li a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#skills h2 {
+    margin-bottom: 20px; 
+    text-align: left; 
+}
+
+.skills-logos img {
+    margin: 10px; 
+    height: 50px; 
+    width: auto; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.heart {
+    color: red;
+}
+
+.contact-icons {
+    text-align: left; 
+    padding: 20px 0; 
+}
+
+.contact-logo {
+    height: 40px; 
+    width: auto; 
+    margin: 5px; 
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-name h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    #projects li,
+    #skills div {
+        flex: 0 0 80%;
+    }
+}
